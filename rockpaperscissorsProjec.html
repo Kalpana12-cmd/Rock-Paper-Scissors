@@ -9,22 +9,16 @@
     <body>
     
        <p class="paracolor">Rock Paper Scissors</p>
-       <div class="all-buttons"> 
-        <button class="button-icon"onclick="    
-         playGame('Rock');
-            ">
+       <div class="all-buttons "> 
+        <button class="button-icon js-rock-button">
             <img class="img-icon"src="images/rock-emoji.png">
        </button>
     <!-- ..........................................................-->
-       <button class="button-icon" onclick=" 
-            playGame('Paper');
-          ">
+       <button class="button-icon js-paper-button">
             <img class="img-icon"src="images/paper-emoji.png">
        </button>
     <!--.............................................................-->
-        <button class="button-icon" onclick=" 
-          playGame('Scissors');
-          "> 
+        <button class="button-icon js-scissors-button"> 
              <img class="img-icon"src="images/scissors-emoji.png">
             </button>
            </div> 
@@ -43,6 +37,9 @@
             ">
             Reset Score
         </button>
+        <button class="Auto-button" onclick="
+         autoPlay();
+        ">Auto Play</button>
       </div>
         <script src="script.js"></script>
     </body>
